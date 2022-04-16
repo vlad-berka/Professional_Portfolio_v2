@@ -13,15 +13,15 @@
     <body class="container-fluid">
         <!-- Top of page header: name and local webpage nav links -->
         <div class="row align-items-center text-center container-fluid">
-            <div class="col-3 Top align-self-start">
-              <h1>VLADIMIR BERKA</h1>
+            <div class="col-4 col-left">
+              <h1 class="col-11">VLADIMIR BERKA</h1>
             </div>
-            <div class="col-9 col-right">
+            <div class="col-8">
                 <nav>
                     <a href="#About_Me">ABOUT ME</a>
                     <a href="#My_Work">MY WORK</a>
                     <a href="#Contact_Me">CONTACT ME</a>
-                    <a href="#Resume">RESUME</a>
+                    <a href="./assets/images/headshot.JPG" target="_blank">RESUME</a>
                 </nav>
             </div>
           </div>
@@ -36,11 +36,11 @@
         </header>
 
         <!-- Starting two column layout: heading titles left and content right -->
-        <div class="row align-items-center text-center container-fluid">
-            <div class="col-3 Top align-self-start col-left">>
-                <h2 id="About_Me">About Me</h2>
+        <div class="align-items-start text-center container-fluid row">
+            <div class="col-4 col-left">
+                <h2 class="col-11" id="About_Me">About Me</h2>
             </div>
-            <div class="col-9 justify-content-end text-center col-right">
+            <div class="col-8 col-right container-fluid row">
                 <p>Civil Engineer by education and Structural Engineer by profession, but aspiring web developer.</p><br>
                 <p>Slovak by birth and Texan by nurture, but Pacific North-West native by nature.</p><br>
                 <p>While waiting for the season's snow fall, I play and design tabletop board games.</p>
@@ -53,12 +53,12 @@
 
         <!-- Section with image work hyperlinks to github work completed
         NOTE: large project requires "article" container-fluid and nested article with "nested_img_L" class -->
-        <div class="row align-items-center text-center container-fluid">
-            <div class="col-3 Top align-self-start col-left">
-                <h2 id="My_Work">Work</h2>
+        <div class="align-items-start text-center container-fluid row">
+            <div class="col-4 col-left d-flex">
+                <h2 class="col-11 align-self-end" id="My_Work">Work</h2>
             </div>
-            <div class="col-9 justify-content-end text-center col-right container-fluid">
-                <article class="col-6">
+            <div class="col-8 col-right container-fluid row">
+                <article class="col-12">
                     <h3>Semantic Markup & Code Refractor</h3>
                     <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
                     <img class="nested_img_L" src="./assets/images/HW1.png" alt="Homework 1 screenshot"></img></a>
@@ -83,16 +83,16 @@
                     <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
                     <img class="nested_img_S" src="./assets/images/placeholder1.jpg" alt="Homework 5 screenshot"></img></a>
                 </aside>
-            </article>
+            </div>
         </div>
 
         <!-- Basically the footer at the bottom of the page with contact nav links
         NOTE: CANNOT USE FOOTER CLASS WITHOUT REVISING CSS FILE as some CSS properties based on "section.two_col" selector -->
-        <div class="row align-items-center text-center container-fluid">
-            <div class="col-3 Top align-self-start">
-                <h2 id="Contact_Me">Contact Me</h2>
+        <div class="row align-items-start text-top container-fluid">
+            <div class="col-4 col-left">
+                <h2 class="col-11 align-self-end" id="Contact_Me">Contact Me</h2>
             </div>
-            <div class="col-9 col-right">
+            <div class="col-8 col-right container-fluid row">
                 <nav>
                     <a href="">Ph: (555) 555-555</a>
                     <a href="#Top">WEBSITE</a>

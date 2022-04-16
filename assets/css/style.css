@@ -72,12 +72,14 @@ h1 {
   background-color: var(--hightlight_color);
   color: var(--light_text);
   padding: 20px;
-  margin: 15px 0 15px 0;
+  /* margin: 15px 0 15px 0; */
 }
 
 /* Section title, font height (left column) */
 h2 {
   font-size: 180%;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 /* Heading text of image captions and background caption */
@@ -182,7 +184,7 @@ section {
 /* Captions to image links in WORK section */
 article > h3, aside > h3 {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   justify-content: center;
   text-align: center;
   width: auto;
@@ -218,6 +220,15 @@ a > img:hover {
   border-radius: 50%;
   border: 5px solid var(--hightlight_color);
   z-index: 2;
+}
+
+.col-left {
+  display: flex;
+  align-items: center;
+}
+
+.col-left, .col-right {
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 900px) {
