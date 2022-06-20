@@ -280,9 +280,9 @@ h3 > a {
   }
 
   /* Adjusting title appearance with smaller screens  */
-  h2 {
+  /* h2 {
     text-decoration: underline;
-  }
+  } */
 
   /* Locating "absolute" headshot image placement on smaller screens  */
   .headshot {
@@ -296,6 +296,14 @@ h3 > a {
 
   .col-right{
     border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .col-left {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 3px solid var(--hightlight_color);
   }
 
   /* Adjusting spaces around sides of content, changing to column layout */
