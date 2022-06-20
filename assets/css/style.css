@@ -64,6 +64,7 @@ h1,h2,h3 {
   text-align: right;
   padding: 10px 10px 10px 10px;
   color: var(--hightlight_color);  
+  word-break: break-word;
 }
 
 /* Name font height at top of page */
@@ -142,6 +143,11 @@ section {
   border-left: 5px solid var(--hightlight_color);
 }
 
+.top_nav {
+  padding: 25px 15px 25px 15px;
+  border-left: none;
+}
+
 /* Nested Flex container properties*/
 .nest_col {
   display: flex;
@@ -185,9 +191,9 @@ section {
 article > h3, aside > h3 {
   position: absolute;
   /* top: 50%; */
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
-  width: auto;
+  /* width: 50vw; */
   height: auto;
   margin: 0px 10px 0px 8px;
   z-index: 1;
@@ -204,6 +210,7 @@ p {
 /* Adding highlight on hover for nav text links */
 a:hover {
   color: white;
+  opacity: 0.7;
 }
 
 /* Adding highlight on hover for image links */
@@ -230,6 +237,25 @@ a > img:hover {
 .col-left, .col-right {
   margin-top: 25px;
 }
+
+.img_link {
+  color: red;
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h3 > a {
+  color: var(--light_text);
+  font-style: normal;
+  max-width: 100vw;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 @media screen and (max-width: 900px) {
 
@@ -264,8 +290,16 @@ a > img:hover {
     left: 37%;
   }
 
+  .xtra_pad {
+    padding-bottom: 20px;
+  }
+
+  .col-right{
+    border: none;
+  }
+
   /* Adjusting spaces around sides of content, changing to column layout */
-  body, section, header {
+  body, section, header, aside, article, div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -273,6 +307,10 @@ a > img:hover {
     align-content: center;
     padding: 0 0 0 0;
     position: static;
+  }
+
+  article > h3, aside > h3 {
+    width: 85%;
   }
 
   /* Adjusting spaces around sides of content */
@@ -309,5 +347,15 @@ a > img:hover {
     border-bottom: solid 5px var(--hightlight_color);
     padding: 0 0 5px 0px;
     margin: 0 0 15px 0px;
+  }
+
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .top_nav{
+    padding: 0;
+    margin-top: 0;
   }
 }

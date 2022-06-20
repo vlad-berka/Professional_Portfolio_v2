@@ -13,13 +13,14 @@
     <body class="container-fluid">
         <!-- Top of page header: name and local webpage nav links -->
         <div class="row align-items-center text-center container-fluid">
-            <div class="col-4 col-left">
-              <h1 class="col-11">VLADIMIR BERKA</h1>
+            <div class="col-lg-4 col-s-12 col-left">
+              <h1 class="col-12">VLADIMIR BERKA</h1>
             </div>
-            <div class="col-8">
-                <nav>
-                    <a href="#About_Me">ABOUT ME</a>
+            <div class="col-lg-8 col-xs-12 xtra_pad">
+                <nav class="col-right top_nav">
+                    <a href="#About_Me">BRAND STATEMENT</a>
                     <a href="#My_Work">MY WORK</a>
+                    <a href="#Bio">BIO</a>
                     <a href="#Contact_Me">CONTACT ME</a>
                     <a href="./assets/images/Vlad Berka_RESUME.pdf" target="_blank">RESUME</a>
                 </nav>
@@ -37,10 +38,84 @@
 
         <!-- Starting two column layout: heading titles left and content right -->
         <div class="align-items-start text-center container-fluid row">
-            <div class="col-4 col-left">
-                <h2 class="col-11" id="About_Me">About Me</h2>
+            <div class="col-md-4 col-xs-12 col-left">
+                <h2 class="col-11" id="About_Me">Brand Statement</h2>
             </div>
-            <div class="col-8 col-right container-fluid row">
+            <div class="col-md-8 col-xs-12 col-right container-fluid row">
+                <p>Structural Engineer of 8 years exploring software development pathways.</p><br>
+                <p>Currently earning a certificate in Full Stack Web Development with strengths in communication and analytical reasoning.</p><br>
+                <p>Passionate about puzzles and tabletop games, with an insatiable desire to solve complex logic problems in a software development environment.</p>
+                <br>
+            </div>
+        </div>
+
+        <!-- Section with image work hyperlinks to github work completed
+        NOTE: large project requires "article" container-fluid and nested article with "nested_img_L" class -->
+        <div class="align-items-start text-center container-fluid row">
+            <div class="col-md-4 col-xs-12 col-left d-flex">
+                <h2 class="col-11 align-self-end" id="My_Work">Personal Projects in Development</h2>
+            </div>
+            <div class="col-md-8 col-xs-12 col-right container-fluid row">
+                <article class="col-12 d-flex">
+                    <h3 class="align-self-center col-md-4 col-xs-6"><a href="https://github.com/vlad-berka/MTG_EDH_Tracker" target="_blank">Magic the Gathering, Stat Tracker, GitHub</a></h3>
+                    <a href="https://mtg-edh-stat-tracker.herokuapp.com/" target="_blank">
+                    <img class="nested_img_L" src="./assets/images/MTG_EDH_TRACKER.png" alt="Personal Project 1, screenshot"></img></a>
+                </article>
+            </div>
+        </div>
+        
+        <!-- Section with image work hyperlinks to github work completed
+        NOTE: large project requires "article" container-fluid and nested article with "nested_img_L" class -->
+        <div class="align-items-start text-center container-fluid row">
+            <div class="col-md-4 col-xs-12 col-left d-flex">
+                <h2 class="col-11 align-self-end" id="My_Work">Completed Work</h2>
+            </div>
+            <div class="col-md-8 col-xs-12 col-right container-fluid row">
+                <article class="col-12 d-flex">
+                    <h3 class="align-self-center col-md-4 col-xs-6"><a href = "https://github.com/wonjong2/Bens_Diner" target="_blank">Ben's Diner (Full-Stack App)</a></h3>
+                    <a href="https://bens-diner.herokuapp.com/" target="_blank" class="">
+                    <img class="nested_img_L" src="./assets/images/BENS DINER.png" alt="Group Project 2, Ben's Diner"></img></a>
+                </article>
+                <aside class="col-md-6 col-xs-12 d-flex">
+                    <h3 class="align-self-center col-md-2 col-xs-6"><a href = "https://github.com/vlad-berka/Tech_Blog" target="_blank">Tech Blog</a></h3>
+                    <a href="https://shielded-journey-15443.herokuapp.com/" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/TECH_BLOG.png" alt="Tech Blog Screenshot"></img></a>
+                </aside>
+                <aside class="col-md-6 col-xs-12 d-flex">
+                    <h3 class="align-self-center col-md-2 col-xs-6"><a href = "https://github.com/vlad-berka/E_Commerce_Backend" target="_blank">E Commerce Backend</a></h3>
+                    <a href="https://github.com/vlad-berka/E_Commerce_Backend" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/E_COMMERCE_BACKEND.png" alt="E_Commerce Backend Screenshot"></img></a>
+                </aside>
+                <aside class="col-md-6 col-xs-12 d-flex">
+                    <h3 class="align-self-center col-md-2 col-xs-6"><a href = "https://github.com/vlad-berka/Note_Taker" target="_blank">Note Taker</a></h3>
+                    <a href="https://shrouded-stream-07436.herokuapp.com/" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/NOTE_TAKER.png" alt="Note Taker Screenshot"></img></a>
+                </aside>
+
+                <aside class="col-md-6 col-xs-12 d-flex">
+                    <h3 class="align-self-center col-md-2 col-xs-6"><a href = "https://github.com/vlad-berka/Weather_Dashboard" target="_blank">Weather Dashboard</a></h3>
+                    <a href="https://vlad-berka.github.io/Weather_Dashboard/" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/Weather_Dashboard_ScreenShot_1.png" alt="Weather Dashboard Screenshot"></img></a>
+                </aside>
+                <aside class="col-md-6 col-xs-12 d-flex">
+                    <h3 class="align-self-center col-md-2 col-xs-6"><a href = "https://github.com/vlad-berka/Code_Quiz" target="_blank">Code Quiz</a></h3>
+                    <a href="https://vlad-berka.github.io/Code_Quiz/" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/VMB_CodeQuiz_SS2.png" alt="Code Quiz Screenshot"></img></a>
+                </aside>
+                <aside class="col-md-6 col-xs-12 d-flex">
+                    <h3 class="align-self-center col-md-2 col-xs-6"><a href = "https://github.com/levisgaragegroupinc/translation_app" target="_blank">Translate App (Google Translate API)</a></h3>
+                    <a href="https://levisgaragegroupinc.github.io/translation_app/" target="_blank">
+                    <img class="nested_img_L" src="./assets/images/Screenshot_Translation_App.png" alt="Group Project 1, Google Translate API Screenshot"></img></a>
+                </aside>
+            </div>
+        </div>
+
+        <!-- Starting two column layout: heading titles left and content right -->
+        <div class="align-items-start text-center container-fluid row">
+            <div class="col-md-4 col-xs-12 col-left">
+                <h2 class="col-11" id="Bio">Bio</h2>
+            </div>
+            <div class="col-md-8 col-xs-12 col-right container-fluid row">
                 <p>Civil Engineer by education and Structural Engineer by profession, but aspiring web developer.</p><br>
                 <p>Slovak by birth and Texan by nurture, but Pacific North-West native by nature.</p><br>
                 <p>While waiting for the season's snow fall, I play and design tabletop board games.</p>
@@ -51,53 +126,18 @@
             </div>
         </div>
 
-        <!-- Section with image work hyperlinks to github work completed
-        NOTE: large project requires "article" container-fluid and nested article with "nested_img_L" class -->
-        <div class="align-items-start text-center container-fluid row">
-            <div class="col-4 col-left d-flex">
-                <h2 class="col-11 align-self-end" id="My_Work">Work</h2>
-            </div>
-            <div class="col-8 col-right container-fluid row">
-                <article class="col-12 d-flex">
-                    <h3 class="align-self-center" href="https://github.com/vlad-berka" target="_blank">Translate App (Google Translate API)</h3>
-                    <a href="https://github.com/levisgaragegroupinc/translation_app" target="_blank">
-                    <img class="nested_img_L" src="./assets/images/Screenshot_Translation_App.png" alt="Homework 1 screenshot"></img></a>
-                </article>
-                <aside class="col-6 d-flex">
-                    <h3 class="align-self-center">Code Quiz</h3>
-                    <a href="https://github.com/vlad-berka/Code_Quiz" target="_blank">
-                    <img class="nested_img_S" src="./assets/images/VMB_CodeQuiz_SS2.png" alt="Homework 2 screenshot"></img></a>
-                </aside>
-                <aside class="col-6 d-flex"> 
-                    <h3 class="align-self-center">Weather Dashboard</h3>
-                    <a href="https://github.com/vlad-berka/Weather_Dashboard" target="_blank">
-                    <img class="nested_img_S" src="./assets/images/Weather_Dashboard_ScreenShot_1.png" alt="Homework 3 screenshot"></img></a>
-                </aside>
-                <aside class="col-6 d-flex">
-                    <h3 class="align-self-center">Placeholder Project 3</h3>
-                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
-                    <img class="nested_img_S" src="./assets/images/placeholder2.jpg" alt="Homework 4 screenshot"></img></a>
-                </aside>
-                <aside class="col-6 d-flex">
-                    <h3 class="align-self-center">Placeholder Project 4</h3>
-                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
-                    <img class="nested_img_S" src="./assets/images/placeholder1.jpg" alt="Homework 5 screenshot"></img></a>
-                </aside>
-            </div>
-        </div>
-
         <!-- Basically the footer at the bottom of the page with contact nav links
         NOTE: CANNOT USE FOOTER CLASS WITHOUT REVISING CSS FILE as some CSS properties based on "section.two_col" selector -->
         <div class="row align-items-start text-top container-fluid">
-            <div class="col-4 col-left">
+            <div class="col-md-4 col-xs-12 col-left">
                 <h2 class="col-11 align-self-end" id="Contact_Me">Contact Me</h2>
             </div>
-            <div class="col-8 col-right container-fluid row">
+            <div class="col-md-8 col-xs-12 col-right container-fluid row contact_me">
                 <nav>
-                    <a href="">Ph: (555) 555-555</a>
+                    <a href="">Ph: (832) 368-5421</a>
                     <a href="#Top">WEBSITE</a>
                     <a href="https://github.com/vlad-berka" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/vladimir-berka-pe-a1536270?trk=public_profile_browsemap" target="_blank">Linked-in</a>
+                    <a href="https://www.linkedin.com/in/vladimir-berka/" target="_blank">Linked-in</a>
                     <a href="https://open.spotify.com/user/czech_yo_self?si=89cda40d601a4415" target=" _blank">Spotify</a>
                     <a href="mailto:vlad.m.berka@gmail.com" target=" _blank">Email</a>   
                     <a href="./assets/images/Vlad Berka_RESUME.pdf" target="_blank">Resume</a>                
